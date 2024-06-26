@@ -290,6 +290,12 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .hero-first-col-mb{
 	margin-bottom:30px;
 }
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+  }
 
 /* = Colour
 -------------------------------------------------------------- */
