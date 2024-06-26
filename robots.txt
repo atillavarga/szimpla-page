@@ -1,7 +1,5 @@
----
-permalink: /robots.txt
----
+# Reference: https://developers.cloudflare.com/fundamentals/get-started/reference/cdn-cgi-endpoint/#disallow-using-robotstxt
 User-agent: *
-Disallow:
+Disallow: /cdn-cgi/
 
-Sitemap: {{ site.baseurl | prepend: site.url }}/sitemap.xml
+Sitemap: https://example.com/sitemap.xml
