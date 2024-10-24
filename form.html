@@ -35,7 +35,7 @@
       .then(response => response.text())
       .then(data => {
         console.log('Data submitted successfully:', data);
-        // You can add a success message or redirect here
+        window.location.href='/form-submitted.html';
       })
       .catch(error => {
         console.error('Error submitting data:', error);
