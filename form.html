@@ -32,7 +32,7 @@
         },
         body: JSON.stringify({ name, email })
       })
-      .then(response => response.json())
+      .then(response => response.text())
       .then(data => {
         console.log('Data submitted successfully:', data);
         // You can add a success message or redirect here
