@@ -413,7 +413,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/main.js"></script>
 
 			<script>
-				runNumber = 1;
 				function submitForm(event) {
 					const form = document.getElementById('reservationForm') || document.getElementById('submissionForm');
 				
@@ -447,13 +446,11 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			</script>
 
 			<script>
-				submitForm(runNumber);
-				runNumber = 2;
+				submitForm(event);
 			</script>
 
 			<script>
-				submitForm(runNumber);
-				runNumber = 3;
+				submitForm(event);
 			</script>
 			
 			<!-- <script>
