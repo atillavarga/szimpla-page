@@ -113,7 +113,6 @@
 									  const name = document.getElementById('name').value;
 									  const email = document.getElementById('email').value;
 								
-									  // Replace with your Cloudflare Worker URL
 									  const workerUrl = 'https://forms-handler.atilla1varga.workers.dev/';
 								
 									  fetch(workerUrl, {
@@ -123,11 +122,11 @@
 										},
 										body: JSON.stringify({ name, email })
 									  })
-									  .then(response => response.json())
+									  .then(response => response.text())
 									  .then(data => {
 										console.log('Data submitted successfully:', data);
-										// You can add a success message or redirect here
-									  })
+										window.location.href='/form-submitted.html';
+									})
 									  .catch(error => {
 										console.error('Error submitting data:', error);
 										// Handle errors, e.g., display an error message
