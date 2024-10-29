@@ -414,7 +414,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 			<script>
 				function submitForm(event) {
-					const form = document.getElementById('reservationForm') || document.getElementById('submissionForm');
+					const form = document.getElementsByClassName('field half') || document.getElementsByClassName('field half');
 				
 					form.addEventListener('submit', (event) => {
 					event.preventDefault(); // Prevent default form submission behavior
