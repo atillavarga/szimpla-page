@@ -69,15 +69,15 @@
 									
 								<p>To be among the first to experience direct deposition patterning, reserve your alpha product now!</p>
 								
-								<form id="Form" method="post" action="#">
+								<form id="reservationForm" method="post" action="#">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
-											<input type="text" name="name" id="name" autocomplete="name" required>
+											<input type="text" name="reservation_name" id="reservation_name" autocomplete="name" required>
 										</div>
 										<div class="field half">
 											<label for="email">Email</label>
-											<input type="email" name="email" id="email" autocomplete="email" required>
+											<input type="email" name="reservation_email" id="reservation_email" autocomplete="email" required>
 										</div>
 									</div>
 									<ul class="actions">
@@ -121,16 +121,18 @@
 							<article id="contact">
 								<h2 class="major">Contact</h2>
 								<span class="image main"></span>
-								<p>Get in touch and connect with us on social media!</p>
-								<form id="Form" method="post" action="#">
+								<p> Get in touch via email <a href="mailto:info@szimpla.co" target="_blank">info@szimpla.co</a> or reach out on social media.</p> 
+
+								<p>Stay up to date on Szimpla and direct deposition patterning by signing up for our mailing list. </p>
+								<form id="submissionForm" method="post" action="#">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
-											<input type="text" name="name" id="name" autocomplete="name" required>
+											<input type="text" name="submission_name" id="submission_name" autocomplete="name" required>
 										</div>
 										<div class="field half">
 											<label for="email">Email</label>
-											<input type="email" name="email" id="email" autocomplete="email" required>
+											<input type="email" name="submission_email" id="submission_email" autocomplete="email" required>
 										</div>
 										<!-- <div class="field">
 											<label for="message">Message</label>
@@ -141,43 +143,12 @@
 										<li><input type="submit" value="Submit" class="primary" /></li>
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
+									<ul class="icons">
+										<li><a href="https://x.com/SzimplaSystems" target="_blank" class="icon brands fa-x-twitter"><span class="label">X</span></a></li>
+										<li><a href="https://www.linkedin.com/company/szimpla" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+										<li><a href="mailto:info@szimpla.co" target="_blank" class="icon regular fa-envelope"><span class="label">Email</span></a></li>
+									</ul>
 								</form>
-
-								<!-- <script>
-									const form = document.getElementById('submissionForm');
-								
-									form.addEventListener('submit', (event) => {
-									  event.preventDefault(); // Prevent default form submission behavior
-								
-									  const name = document.getElementById('name').value;
-									  const email = document.getElementById('email').value;
-								
-									  const workerUrl = 'https://forms-handler.atilla1varga.workers.dev/';
-								
-									  fetch(workerUrl, {
-										method: 'POST',
-										headers: {
-										  'Content-Type': 'application/json'
-										},
-										body: JSON.stringify({ name, email })
-									  })
-									  .then(response => response.text())
-									  .then(data => {
-										console.log('Data submitted successfully:', data);
-										window.location.href='/form-submitted.html';
-									})
-									  .catch(error => {
-										console.error('Error submitting data:', error);
-										// Handle errors, e.g., display an error message
-									  });
-									});
-								</script> -->
-
-								<ul class="icons">
-									<li><a href="https://x.com/SzimplaSystems" target="_blank" class="icon brands fa-x-twitter"><span class="label">X</span></a></li>
-									<li><a href="https://www.linkedin.com/company/szimpla" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-									<li><a href="mailto:info@szimpla.co" target="_blank" class="icon regular fa-envelope"><span class="label">Email</span></a></li>
-								</ul>
 							</article>
 
 						<!-- Elements -->
@@ -442,13 +413,15 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/main.js"></script>
 
 			<script>
-				const form = document.getElementById('reservationForm');
+				// const form = document.getElementById('reservationForm');
+				const form = event.target.name;
+				
 			
 				form.addEventListener('submit', (event) => {
 				  event.preventDefault(); // Prevent default form submission behavior
 			
-				  const name = document.getElementById('name').value;
-				  const email = document.getElementById('email').value;
+				  const name = document.getElementById('reservation_name').value || document.getElementById('submission_name').value;
+				  const email = document.getElementById('reservation_email').value || document.getElementById('submission_email').value;
 			
 				  const workerUrl = 'https://forms-handler.atilla1varga.workers.dev/';
 			
@@ -471,7 +444,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				});
 			</script>
 			
-			<script>
+			<!-- <script>
 				const form = document.getElementById('submissionForm');
 			
 				form.addEventListener('submit', (event) => {
@@ -499,7 +472,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					// Handle errors, e.g., display an error message
 				  });
 				});
-			</script>
+			</script> -->
 
 	</body>
 </html>
