@@ -83,15 +83,15 @@
 								<h2 class="major">Contact</h2>
 								<span class="image main"></span>
 								<p>Get in touch and connect with us on social media!</p>
-								<form method="post" action="#">
+								<form id="submissionForm" method="post" action="#">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
+											<input type="text" name="name" id="name" required>
 										</div>
 										<div class="field half">
 											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
+											<input type="email" name="email" id="email" required>
 										</div>
 										<div class="field">
 											<label for="message">Message</label>
@@ -103,6 +103,37 @@
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
 								</form>
+
+								<script>
+									const form = document.getElementById('submissionForm');
+								
+									form.addEventListener('submit', (event) => {
+									  event.preventDefault(); // Prevent default form submission behavior
+								
+									  const name = document.getElementById('name').value;
+									  const email = document.getElementById('email').value;
+								
+									  const workerUrl = 'https://forms-handler.atilla1varga.workers.dev/';
+								
+									  fetch(workerUrl, {
+										method: 'POST',
+										headers: {
+										  'Content-Type': 'application/json'
+										},
+										body: JSON.stringify({ name, email })
+									  })
+									  .then(response => response.text())
+									  .then(data => {
+										console.log('Data submitted successfully:', data);
+										window.location.href='/form-submitted.html';
+									})
+									  .catch(error => {
+										console.error('Error submitting data:', error);
+										// Handle errors, e.g., display an error message
+									  });
+									});
+								</script>
+
 								<ul class="icons">
 									<li><a href="https://x.com/SzimplaSystems" target="_blank" class="icon brands fa-x-twitter"><span class="label">X</span></a></li>
 									<li><a href="https://www.linkedin.com/company/szimpla" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
