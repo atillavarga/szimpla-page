@@ -69,7 +69,7 @@
 									
 								<p>To be among the first to experience direct deposition patterning, reserve your alpha product now!</p>
 								
-								<!-- <form id="submissionForm" method="post" action="#">
+								<form id="reservationForm" method="post" action="#">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
@@ -84,7 +84,7 @@
 										<li><input type="submit" value="Reserve Now" class="primary" /></li>
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
-								</form>	 -->
+								</form>	
 							</article>
 
 						<!-- Demos -->
@@ -441,6 +441,36 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+			<script>
+				const form = document.getElementById('reservationForm');
+			
+				form.addEventListener('submit', (event) => {
+				  event.preventDefault(); // Prevent default form submission behavior
+			
+				  const name = document.getElementById('name').value;
+				  const email = document.getElementById('email').value;
+			
+				  const workerUrl = 'https://forms-handler.atilla1varga.workers.dev/';
+			
+				  fetch(workerUrl, {
+					method: 'POST',
+					headers: {
+					  'Content-Type': 'application/json'
+					},
+					body: JSON.stringify({ name, email })
+				  })
+				  .then(response => response.text())
+				  .then(data => {
+					console.log('Data submitted successfully:', data);
+					window.location.href='/form-submitted.html';
+				})
+				  .catch(error => {
+					console.error('Error submitting data:', error);
+					// Handle errors, e.g., display an error message
+				  });
+				});
+			</script>
+			
 			<script>
 				const form = document.getElementById('submissionForm');
 			
