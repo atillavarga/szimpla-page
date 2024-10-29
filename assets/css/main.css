@@ -198,6 +198,16 @@ input, select, textarea {
 			margin: 0 0 2rem 0;
 		}
 
+		h1.minor, h2.minor, h3.minor, h4.minor, h5.minor, h6.minor {
+			border-bottom: solid 0.5px #ffffff;
+			width: -moz-max-content;
+			width: -webkit-max-content;
+			width: -ms-max-content;
+			width: max-content;
+			padding-bottom: 0.1rem;
+			margin: 0 0 0.5rem 0;
+		}
+
 	h1 {
 		font-size: 2.25rem;
 		line-height: 1.3;
