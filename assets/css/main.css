@@ -22,7 +22,7 @@ section, summary, time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	font: "Quicksand";
 	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
@@ -198,6 +198,26 @@ input, select, textarea {
 			margin: 0 0 2rem 0;
 		}
 
+		h1.minor, h2.minor, h3.minor, h4.minor, h5.minor, h6.minor {
+			border-bottom: solid 0.5px #ffffff;
+			width: -moz-max-content;
+			width: -webkit-max-content;
+			width: -ms-max-content;
+			width: max-content;
+			padding-bottom: 0.1rem;
+			margin: 0 0 0.5rem 0;
+		}
+
+		h1.mini, h2.mini, h3.mini, h4.mini, h5.mini, h6.mini {
+			border-bottom: solid 0.1px #ffffff;
+			width: -moz-max-content;
+			width: -webkit-max-content;
+			width: -ms-max-content;
+			width: max-content;
+			padding-bottom: 0.1rem;
+			margin: 0 0 0.1rem 0;
+		}
+
 	h1 {
 		font-size: 2.25rem;
 		line-height: 1.3;
@@ -223,7 +243,7 @@ input, select, textarea {
 	}
 
 	h6 {
-		font-size: 0.6rem;
+		font-size: 0.2rem;
 	}
 
 	@media screen and (max-width: 736px) {
