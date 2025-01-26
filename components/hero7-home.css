@@ -1,0 +1,302 @@
+.hero7-home-header23 {
+  height: 812px;
+  display: flex;
+  margin-top: var(--dl-space-space-sixunits);
+  align-items: center;
+  padding-top: var(--dl-space-space-fiveunits);
+  margin-bottom: var(--dl-space-space-sixunits);
+  flex-direction: column;
+  padding-bottom: 232px;
+  justify-content: center;
+}
+ 
+.hero7-home-image-left-black {
+  left: -201px;
+  width: auto;
+  bottom: 36px;
+  height: 463px;
+  position: absolute;
+  object-fit: cover;
+  animation-name: backInLeft;
+  animation-delay: 0s;
+  animation-duration: 900ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+ 
+.hero7-home-image-right-black {
+  top: 235px;
+  right: -9px;
+  width: auto;
+  height: 200px;
+  position: absolute;
+  object-fit: cover;
+  animation-name: backInRight;
+  animation-delay: 0s;
+  animation-duration: 900ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+ 
+.hero7-home-image-right-red {
+  top: 148px;
+  right: -83px;
+  width: auto;
+  height: 244px;
+  position: absolute;
+  object-fit: cover;
+  animation-name: backInRight;
+  animation-delay: 0s;
+  animation-duration: 800ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+ 
+.hero7-home-image-left-red {
+  left: -248px;
+  width: auto;
+  bottom: 101px;
+  height: 499px;
+  position: absolute;
+  object-fit: cover;
+  animation-name: backInLeft;
+  animation-delay: 0s;
+  animation-duration: 800ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+ 
+.hero7-home-max-width {
+  width: 606px;
+  display: flex;
+  position: relative;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.hero7-home-content {
+  gap: var(--dl-space-space-oneandhalfunits);
+  width: 727px;
+  margin: auto;
+  display: flex;
+  max-width: 1000px;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.hero7-home-text1 {
+  text-align: center;
+  font-family: "Quicksand";
+}
+ 
+.hero7-home-text2 {
+  font-style: normal;
+  text-align: center;
+  font-family: "Quicksand";
+  font-weight: 500;
+}
+ 
+.hero7-home-actions {
+  gap: var(--dl-space-space-unit);
+  display: flex;
+  align-items: flex-start;
+}
+ 
+.hero7-home-container1 {
+  display: flex;
+  align-items: flex-start;
+}
+ 
+.hero7-home-button1 {
+  border-color: #fa4949;
+  text-decoration: none;
+  background-color: #fa4949;
+}
+ 
+.hero7-home-text3 {
+  text-align: center;
+  font-family: "Quicksand";
+  text-decoration: none;
+}
+ 
+.hero7-home-container2 {
+  display: flex;
+  align-items: flex-start;
+}
+ 
+.hero7-home-button2 {
+  color: #fa4949;
+  border-color: #fa4949;
+  text-decoration: none;
+}
+ 
+.hero7-home-text4 {
+  text-align: center;
+  font-family: "Quicksand";
+  text-decoration: none;
+}
+ 
+.hero7-home-fragment1 {
+  display: contents;
+}
+ 
+.hero7-home-text5 {
+  display: inline-block;
+}
+ 
+.hero7-home-fragment2 {
+  display: contents;
+}
+ 
+.hero7-home-text6 {
+  display: inline-block;
+}
+ 
+.hero7-home-fragment3 {
+  display: contents;
+}
+ 
+.hero7-home-text7 {
+  display: inline-block;
+}
+ 
+.hero7-home-fragment4 {
+  display: contents;
+}
+ 
+.hero7-home-text8 {
+  display: inline-block;
+}
+ 
+.hero7-homeroot-class-name {
+  width: 100%;
+  height: 100vh;
+  margin-top: 0px;
+  min-height: auto;
+  padding-top: var(--dl-space-space-threeunits);
+  margin-bottom: 0px;
+  padding-bottom: var(--dl-space-space-threeunits);
+}
+ 
+.hero7-homeroot-class-name1 {
+  flex: 1;
+}
+ 
+.hero7-homeroot-class-name2 {
+  flex: 1;
+}
+ 
+@media(max-width: 991px) {
+  .hero7-home-image-left-black {
+    width: 398px;
+    height: 387px;
+  }
+  .hero7-home-image-right-black {
+    top: 108px;
+    right: -43px;
+  }
+  .hero7-home-image-right-red {
+    top: 20px;
+    right: -88px;
+  }
+  .hero7-home-image-left-red {
+    width: 452px;
+    height: 441px;
+  }
+}
+ 
+@media(max-width: 767px) {
+  .hero7-home-header23 {
+    flex-direction: row;
+  }
+  .hero7-home-image-left-black {
+    left: -149px;
+    width: 354px;
+    bottom: 32px;
+    height: 345px;
+  }
+  .hero7-home-image-right-black {
+    top: 85px;
+    right: -44px;
+    width: 131px;
+    height: 127px;
+  }
+  .hero7-home-image-right-red {
+    top: 10px;
+    right: -66px;
+    width: 164px;
+    height: 160px;
+  }
+  .hero7-home-image-left-red {
+    left: -203px;
+    width: 392px;
+    bottom: 61px;
+    height: 382px;
+  }
+}
+ 
+@media(max-width: 479px) {
+  .hero7-home-header23 {
+    height: auto;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .hero7-home-image-left-black {
+    left: -52px;
+    width: 175px;
+    bottom: 20px;
+    height: 170px;
+  }
+  .hero7-home-image-right-black {
+    top: 30px;
+    right: -33px;
+    width: 75px;
+    height: 73px;
+  }
+  .hero7-home-image-right-red {
+    top: -1px;
+    right: -37px;
+    width: 94px;
+    height: 91px;
+  }
+  .hero7-home-image-left-red {
+    left: -57px;
+    width: 162px;
+    bottom: 57px;
+    height: 165px;
+  }
+  .hero7-home-content {
+    width: auto;
+    max-width: 1000px;
+    align-self: stretch;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .hero7-home-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+  .hero7-home-container1 {
+    width: 100%;
+  }
+  .hero7-home-button1 {
+    width: 100%;
+  }
+  .hero7-home-container2 {
+    width: 100%;
+  }
+  .hero7-home-button2 {
+    width: 100%;
+  }
+  .hero7-homeroot-class-name {
+    height: 100vh;
+  }
+}

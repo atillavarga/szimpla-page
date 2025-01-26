@@ -1,0 +1,117 @@
+.mission-layout349 {
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  margin-top: var(--dl-space-space-sixunits);
+  align-items: center;
+  margin-bottom: var(--dl-space-space-sixunits);
+  flex-direction: column;
+}
+ 
+.mission-max-width {
+  gap: var(--dl-space-space-fiveunits);
+  height: auto;
+  display: flex;
+  align-self: center;
+  flex-direction: row;
+}
+ 
+.mission-content1 {
+  gap: var(--dl-space-space-oneandhalfunits);
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.mission-section-title {
+  gap: var(--dl-space-space-oneandhalfunits);
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  animation-name: fadeInLeft;
+  flex-direction: column;
+  animation-delay: 0s;
+  animation-duration: 800ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+ 
+.mission-content2 {
+  gap: var(--dl-space-space-oneandhalfunits);
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.mission-text1 {
+  font-style: normal;
+  font-family: "Quicksand";
+  font-weight: 700;
+}
+ 
+.mission-text2 {
+  height: 206px;
+  font-style: normal;
+  font-family: "Quicksand";
+  font-weight: 500;
+}
+ 
+.mission-image-container {
+  flex: 1;
+  height: 288px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  animation-name: fadeInRight;
+  animation-delay: 0s;
+  background-size: cover;
+  background-image: url("https://play.teleporthq.io/static/svg/placeholders/no-image.svg");
+  background-repeat: no-repeat;
+  animation-duration: 800ms;
+  animation-direction: normal;
+  background-position: center;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+ 
+.mission-fragment1 {
+  display: contents;
+}
+ 
+.mission-text3 {
+  display: inline-block;
+}
+ 
+.mission-fragment2 {
+  display: contents;
+}
+ 
+.mission-text4 {
+  display: inline-block;
+}
+ 
+@media(max-width: 991px) {
+  .mission-layout349 {
+    height: auto;
+  }
+  .mission-max-width {
+    gap: var(--dl-space-space-twounits);
+    flex-direction: column-reverse;
+  }
+}
+ 
+@media(max-width: 767px) {
+  .mission-layout349 {
+    height: auto;
+  }
+}
+ 
+@media(max-width: 479px) {
+  .mission-layout349 {
+    height: auto;
+  }
+}

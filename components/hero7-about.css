@@ -1,0 +1,341 @@
+.hero7-about-header23 {
+  height: auto;
+  display: flex;
+  margin-top: var(--dl-space-space-sixunits);
+  align-items: center;
+  padding-top: var(--dl-space-space-fiveunits);
+  margin-bottom: var(--dl-space-space-sixunits);
+  flex-direction: column;
+  padding-bottom: 232px;
+  justify-content: center;
+}
+ 
+.hero7-about-image-right-black1 {
+  top: 73px;
+  right: -22px;
+  width: 176px;
+  height: 171px;
+  position: absolute;
+  object-fit: cover;
+  animation-name: backInRight;
+  animation-delay: 0s;
+  animation-duration: 900ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+ 
+.hero7-about-image-right-black2 {
+  top: 88px;
+  left: -35px;
+  width: auto;
+  height: 200px;
+  position: absolute;
+  object-fit: cover;
+  animation-name: backInLeft;
+  animation-delay: 0s;
+  animation-duration: 900ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+ 
+.hero7-about-image-right-black3 {
+  left: 68px;
+  width: 138px;
+  bottom: 9px;
+  height: 134px;
+  position: absolute;
+  object-fit: cover;
+  animation-name: backInLeft;
+  animation-delay: 0s;
+  animation-duration: 900ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+ 
+.hero7-about-image-right-red1 {
+  top: -6px;
+  right: -13px;
+  width: 216px;
+  height: 210px;
+  position: absolute;
+  object-fit: cover;
+  animation-name: backInRight;
+  animation-delay: 0s;
+  animation-duration: 800ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+ 
+.hero7-about-image-right-red2 {
+  top: 5px;
+  left: 2px;
+  width: auto;
+  height: 244px;
+  position: absolute;
+  object-fit: cover;
+  animation-name: backInLeft;
+  animation-delay: 0s;
+  animation-duration: 800ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+ 
+.hero7-about-max-width {
+  width: 606px;
+  display: flex;
+  position: relative;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.hero7-about-content {
+  gap: var(--dl-space-space-oneandhalfunits);
+  width: 727px;
+  margin: auto;
+  display: flex;
+  max-width: 1000px;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.hero7-about-text1 {
+  text-align: center;
+  font-family: "Quicksand";
+}
+ 
+.hero7-about-text2 {
+  font-style: normal;
+  text-align: center;
+  font-family: "Quicksand";
+  font-weight: 500;
+}
+ 
+.hero7-about-image-right-red3 {
+  left: 31px;
+  width: 178px;
+  bottom: 30px;
+  height: 173px;
+  position: absolute;
+  object-fit: cover;
+  animation-name: backInLeft;
+  animation-delay: 0s;
+  animation-duration: 800ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+ 
+.hero7-about-image-left-black {
+  right: 4px;
+  width: 212px;
+  bottom: 9px;
+  height: 206px;
+  position: absolute;
+  object-fit: cover;
+  animation-name: backInRight;
+  animation-delay: 0s;
+  animation-duration: 900ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+ 
+.hero7-about-image-left-red {
+  right: 19px;
+  width: 256px;
+  bottom: 21px;
+  height: 248px;
+  position: absolute;
+  object-fit: cover;
+  animation-name: backInRight;
+  animation-delay: 0s;
+  animation-duration: 800ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+ 
+.hero7-about-fragment1 {
+  display: contents;
+}
+ 
+.hero7-about-text3 {
+  display: inline-block;
+}
+ 
+.hero7-about-fragment2 {
+  display: contents;
+}
+ 
+.hero7-about-text4 {
+  display: inline-block;
+}
+ 
+.hero7-aboutroot-class-name {
+  height: auto;
+}
+ 
+@media(max-width: 991px) {
+  .hero7-about-image-right-black1 {
+    top: 108px;
+    right: -43px;
+  }
+  .hero7-about-image-right-black2 {
+    top: 82px;
+    left: -4px;
+    width: 138px;
+    height: 134px;
+  }
+  .hero7-about-image-right-black3 {
+    left: -10px;
+    bottom: 52px;
+  }
+  .hero7-about-image-right-red1 {
+    top: 20px;
+    right: -88px;
+  }
+  .hero7-about-image-right-red2 {
+    top: 20px;
+    right: -88px;
+    width: 162px;
+    height: 158px;
+  }
+  .hero7-about-image-right-red3 {
+    left: 6px;
+    bottom: 15px;
+  }
+  .hero7-about-image-left-black {
+    width: 182px;
+    height: 176px;
+  }
+  .hero7-about-image-left-red {
+    width: 228px;
+    height: 222px;
+  }
+}
+ 
+@media(max-width: 767px) {
+  .hero7-about-header23 {
+    flex-direction: row;
+  }
+  .hero7-about-image-right-black1 {
+    top: 77px;
+    right: -43px;
+    width: 106px;
+    height: 102px;
+  }
+  .hero7-about-image-right-black2 {
+    top: 48px;
+    left: 0px;
+    width: 81px;
+    height: 77px;
+  }
+  .hero7-about-image-right-black3 {
+    left: 27px;
+    width: 131px;
+    bottom: 58px;
+    height: 127px;
+  }
+  .hero7-about-image-right-red1 {
+    top: 10px;
+    right: -66px;
+    width: 147px;
+    height: 143px;
+  }
+  .hero7-about-image-right-red2 {
+    top: 10px;
+    right: -66px;
+    width: 94px;
+    height: 91px;
+  }
+  .hero7-about-image-right-red3 {
+    left: -21px;
+    width: 164px;
+    bottom: 72px;
+    height: 160px;
+  }
+  .hero7-about-image-left-black {
+    right: 13px;
+    width: 167px;
+    bottom: 22px;
+    height: 162px;
+  }
+  .hero7-about-image-left-red {
+    right: -66px;
+    width: 224px;
+    bottom: 37px;
+    height: 217px;
+  }
+}
+ 
+@media(max-width: 479px) {
+  .hero7-about-header23 {
+    height: auto;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .hero7-about-image-right-black1 {
+    top: 30px;
+    right: -33px;
+    width: 75px;
+    height: 73px;
+  }
+  .hero7-about-image-right-black2 {
+    top: 20px;
+    left: -9px;
+    width: 75px;
+    height: 73px;
+  }
+  .hero7-about-image-right-black3 {
+    left: 319px;
+    width: 75px;
+    bottom: 78px;
+    height: 73px;
+  }
+  .hero7-about-image-right-red1 {
+    top: -1px;
+    right: -37px;
+    width: 94px;
+    height: 91px;
+  }
+  .hero7-about-image-right-red2 {
+    top: -1px;
+    right: -37px;
+    width: 80px;
+    height: 77px;
+  }
+  .hero7-about-content {
+    width: auto;
+    max-width: 1000px;
+    align-self: stretch;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .hero7-about-image-right-red3 {
+    top: 450px;
+    left: 322px;
+    width: 94px;
+    height: 91px;
+  }
+  .hero7-about-image-left-black {
+    left: -36px;
+    width: 175px;
+    bottom: 54px;
+    height: 170px;
+  }
+  .hero7-about-image-left-red {
+    left: -2px;
+    width: 186px;
+    bottom: 18px;
+    height: 189px;
+  }
+}
