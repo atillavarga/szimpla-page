@@ -1264,7 +1264,8 @@
     justify-content: center;
   }
   .footer1-container2 {
-    width: 435px;
+    /* width: 435px; */
+    width: 325px;
     height: auto;
   }
   .footer1-column2 {
