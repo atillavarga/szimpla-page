@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2FNJGYGJ0V"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-2FNJGYGJ0V');
+    </script>
+    <!-- End Google tag -->
+
     <title>Product - Szimpla</title>
     <meta property="og:title" content="Product - Szimpla" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
+    <meta name="robots" content="index, follow">
     <meta property="twitter:card" content="summary_large_image" />
     <link rel="icon" href="public/szimpla logo icon.svg" sizes="any" type="image/svg+xml">
 
@@ -191,41 +203,17 @@
                         </span>
                       </fragment>
                     </p>
-                    <form class="product-form thq-card">
+                    <form id="reservationForm" method="post" action="#" class="product-form thq-card">
                       <div class="product-container">
                         <div class="product-input1 thq-flex-row">
-                          <label
-                            for="contact-form-1-name"
-                            class="thq-body-small"
-                          >
-                            Name
-                          </label>
-                          <input
-                            type="text"
-                            id="contact-form-1-name"
-                            placeholder="Name"
-                            class="product-text-input1 thq-input"
-                          />
+                          <label for="contact-form-1-name" class="thq-body-small">Name</label>
+                          <input type="text" name="reservation_name" id="reservation_name" placeholder="Name" autocomplete="name" class="product-text-input1 thq-input" required>
                         </div>
                         <div class="product-input2 thq-flex-row">
-                          <label
-                            for="contact-form-1-email"
-                            class="thq-body-small"
-                          >
-                            Email
-                          </label>
-                          <input
-                            type="email"
-                            id="contact-form-1-email"
-                            required="true"
-                            placeholder="Email"
-                            class="product-text-input2 thq-input"
-                          />
+                          <label for="contact-form-1-email" class="thq-body-small">Email</label>
+                          <input type="email" id="reservation_email" id="reservation_email" placeholder="Email" autocomplete="email" class="product-text-input2 thq-input" required>
                         </div>
-                        <button
-                        type="submit"
-                        class="product-button thq-button-filled"
-                        >
+                        <button type="submit" class="product-button thq-button-filled">
                         <span class="thq-body-small">
                           <fragment class="product-fragment15">
                             <span class="product-text15">Submit</span>
@@ -397,9 +385,68 @@
         </footer1-wrapper>
       </div>
     </div>
-    <script
-      defer=""
-      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
-    ></script>
+
+    <!-- Scripts -->
+
+    <script defer="" src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+
+    <script>
+      document.getElementById('reservationForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission behavior
+
+        const name = document.getElementById('reservation_name').value;
+        const email = document.getElementById('reservation_email').value;
+
+        const workerUrl = 'https://forms-handler.atilla1varga.workers.dev/';
+    
+        fetch(workerUrl, {
+          method: 'POST',
+          headers: {
+          'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ name, email })
+          
+        })
+        .then(response => response.text())
+        .then(data => {
+          console.log('Data submitted successfully:', data);
+          window.location.href='/reservation-confirmation.html';
+        })
+        .catch(error => {
+          console.error('Error submitting data:', error);
+          // Handle errors, e.g., display an error message
+        });
+      });
+
+      document.getElementById('submissionForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission behavior
+
+        const name = document.getElementById('submission_name').value;
+        const email = document.getElementById('submission_email').value;
+
+        const workerUrl = 'https://forms-handler.atilla1varga.workers.dev/';
+    
+        fetch(workerUrl, {
+          method: 'POST',
+          headers: {
+          'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ name, email })
+          
+        })
+        .then(response => response.text())
+        .then(data => {
+          console.log('Data submitted successfully:', data);
+          // window.location.href='/form-submitted.html';
+          alert("Form Submitted!");
+        })
+        .catch(error => {
+          console.error('Error submitting data:', error);
+          // Handle errors, e.g., display an error message
+        });
+      });
+    </script>
+
+
   </body>
 </html>

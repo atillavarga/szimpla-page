@@ -1,67 +1,401 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-2FNJGYGJ0V"></script>
-		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2FNJGYGJ0V"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-		gtag('config', 'G-2FNJGYGJ0V');
-		</script>
+    gtag('config', 'G-2FNJGYGJ0V');
+    </script>
+    <!-- End Google tag -->
 
-		<title>Mailing List Confirmation</title>
-		<!-- Metadata -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<meta name="keywords" content="cloudflare, pages, template, edge">
-		<meta name="robots" content="index, follow">
-		<link rel="icon" href="images/szimpla logo icon.svg" sizes="any" type="image/svg+xml">
-		<!-- Metadata END -->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<script src="https://kit.fontawesome.com/f40abce22c.js" crossorigin="anonymous"></script>
+    <title>Mailing List Confirmation</title>
+    	<!-- Metadata -->
+    <meta property="og:title" content="Szimpla" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="robots" content="index, follow">
+    <meta property="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="public/szimpla logo icon.svg" sizes="any" type="image/svg+xml">
 
-	</head>
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 300vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Quicksand;
+        font-size: 16px;
+      }
 
-	<body class="is-preload">
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
 
-        <!-- Wrapper -->
-        <div id="wrapper">
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <!-- Metadata END -->
 
-            <!-- Header -->
-            <header id="header">
-                <h1><img src="images/Szimpla-logo-cropped.svg" alt=""></h1>
-                <p>You have been added to our mailing list! <br>
-                    <a href="https://szimpla.co">Return Home</a>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
 
-                </p>
+      <div class="home-container">
+        <navbar2-wrapper
+          class="navbar2-wrapper"
+          rootclassname="navbar2undefined"
+        >
+          <!--Navbar2 component-->
+          <header class="navbar2-container navbar2root-class-name">
+            <header data-thq="thq-navbar" class="navbar2-navbar-interactive">
+              <a href="index.html" class="navbar2-navlink">
+                <img
+                  alt="image"
+                  src="public/szimpla-logo-cropped.svg"
+                  class="navbar2-image"
+                />
+              </a>
+              <div data-thq="thq-navbar-nav" class="navbar2-desktop-menu">
+                <nav class="navbar2-links1">
+                  <a
+                    href="about.html"
+                    class="navbar2-link11 thq-body-small thq-link"
+                  >
+                    <fragment class="home-fragment10">
+                      <span class="home-text10">About</span>
+                    </fragment>
+                  </a>
+                  <a
+                    href="product.html"
+                    class="navbar2-link21 thq-body-small thq-link"
+                  >
+                    <fragment class="home-fragment11">
+                      <span class="home-text11">Product</span>
+                    </fragment>
+                  </a>
+                </nav>
+              </div>
+              <div data-thq="thq-burger-menu" class="navbar2-burger-menu">
+                <svg viewBox="0 0 1024 1024" class="navbar2-icon10">
+                  <path
+                    d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                  ></path>
+                </svg>
+              </div>
+              <div data-thq="thq-mobile-menu" class="navbar2-mobile-menu">
+                <div class="navbar2-nav">
+                  <div class="navbar2-top">
+                    <img
+                    alt="logo"
+                    src="public/szimpla-logo-cropped.svg"
+                    class="navbar2-logo"
+                    />
+                    <div data-thq="thq-close-menu" class="navbar2-close-menu">
+                      <svg viewBox="0 0 1024 1024" class="navbar2-icon12">
+                        <path
+                          d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <nav class="navbar2-links2">
+                    <a
+                      href="about.html"
+                      class="thq-body-small thq-link"
+                    >
+                      <fragment class="home-fragment10">
+                        <span class="home-text10">About</span>
+                      </fragment>
+                    </a>
+                    <a
+                      href="product.html"
+                      class="thq-body-small thq-link"
+                    >
+                      <fragment class="home-fragment11">
+                        <span class="home-text11">Product</span>
+                      </fragment>
+                    </a>
+                  </nav>
+                </div>
+              </div>
             </header>
-
-            <ul class="icons">
-                <li><a href="https://x.com/SzimplaSystems" target="_blank" class="icon brands fa-x-twitter"><span class="label">X</span></a></li>
-                <li><a href="https://www.linkedin.com/company/szimpla" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-                <li><a href="mailto:info@szimpla.co" target="_blank" class="icon regular fa-envelope"><span class="label">Email</span></a></li>
-            </ul>
-
-            <!-- Footer -->
-            <footer id="footer">
-                <p class="copyright">Szimpla &copy; 2024</a></p>
-            </footer>
-        </div> 
-
-    <!-- BG -->
-    <div id="bg"></div>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>  
-
-    </body>
+          </header>
+        </navbar2-wrapper>
+        <hero7-home-wrapper
+          class="hero7-home-wrapper"
+          rootclassname="hero7-homeundefined"
+        >
+          <!--Hero7Home component-->
+          <div
+            class="hero7-home-header23 thq-section-padding hero7-homeroot-class-name"
+          >
+            <img
+              id="logo-bk"
+              alt="image"
+              src="public/szimpla-logo-icon.svg"
+              class="hero7-home-image-left-black"
+            />
+            <img
+              id="logo-bk-2"
+              alt="image"
+              src="public/szimpla-logo-icon.svg"
+              class="hero7-home-image-right-black"
+            />
+            <img
+              id="logo-red-2"
+              alt="image"
+              src="public/szimpla%20logo%20icon.svg"
+              class="hero7-home-image-right-red"
+            />
+            <img
+              id="logo-red"
+              alt="image"
+              src="public/szimpla%20logo%20icon.svg"
+              class="hero7-home-image-left-red"
+            />
+            <div class="hero7-home-max-width thq-section-max-width">
+              <div class="hero7-home-content">
+                <h1 class="hero7-home-text1 thq-heading-1">
+                  <fragment class="home-fragment18">
+                    <span class="home-text18">Thank you</span>
+                  </fragment>
+                </h1>
+                <p class="hero7-home-text2 thq-body-large">
+                  <fragment class="home-fragment17">
+                    <span class="home-text17">
+                      You've been subscribed to our mailing list and will hear from us soon!
+                    </span>
+                  </fragment>
+                </p>
+                <div class="hero7-home-actions">
+                  <div class="hero7-home-container1">
+                    <a
+                      href="index.html"
+                      class="hero7-home-button1 thq-button-filled"
+                    >
+                      <span class="hero7-home-text3 thq-body-small">
+                        <fragment class="home-fragment15">
+                          <span class="home-text15">Return to homepage</span>
+                        </fragment>
+                      </span>
+                    </a>
+                  </div>
+                  <div class="hero7-home-container2">
+                    <a
+                      href="product.html"
+                      class="hero7-home-button2 thq-button-outline"
+                    >
+                      <span class="hero7-home-text4 thq-body-small">
+                        <fragment class="home-fragment16">
+                          <span class="home-text16">See our product</span>
+                        </fragment>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </hero7-home-wrapper>
+        
+        <footer1-wrapper
+          class="footer1-wrapper"
+          rootclassname="footer1undefined"
+        >
+          <!--Footer1 component-->
+          <footer
+            class="footer1-footer1 thq-section-padding footer1root-class-name"
+          >
+            <div class="footer1-max-width thq-section-max-width">
+              <div class="footer1-content">
+                <div class="footer1-newsletter">
+                  <img
+                    alt="image"
+                    src="public/szimpla-logo-cropped.svg"
+                    class="footer1-image"
+                  />
+                  <span class="footer1-content1 thq-body-small">
+                    Subscribe to our newsletter for the latest updates on new
+                    features and product releases.
+                  </span>
+                  <div class="footer1-actions">
+                    <div class="footer1-form">
+                      <div class="footer1-container1">
+                        <input
+                          type="text"
+                          placeholder="Enter your name"
+                          class="footer1-text-input1 thq-input"
+                        />
+                        <input
+                          type="email"
+                          placeholder="Enter your email"
+                          class="footer1-text-input2 thq-input"
+                        />
+                      </div>
+                      <button class="footer1-button thq-button-outline">
+                        <span class="footer1-action1 thq-body-small">
+                          <fragment class="home-fragment30">
+                            <span class="home-text30">Subscribe</span>
+                          </fragment>
+                        </span>
+                      </button>
+                    </div>
+                    <span class="footer1-content2 thq-body-small">
+                      <fragment class="home-fragment31">
+                        <span class="home-text31">
+                          By subscribing you provide consent to receive updates
+                          from our company.
+                        </span>
+                      </fragment>
+                    </span>
+                  </div>
+                </div>
+                <div class="footer1-links">
+                  <div class="footer1-container2">
+                    <div class="footer1-column2">
+                      <div class="footer1-footer-links1">
+                        <a
+                          href="index.html"
+                          class="footer1-link71 thq-body-small"
+                        >
+                          <fragment class="home-fragment28">
+                            <span class="home-text28">Home</span>
+                          </fragment>
+                        </a>
+                        <a
+                          href="product.html"
+                          class="footer1-link71 thq-body-small"
+                        >
+                          <fragment class="home-fragment28">
+                            <span class="home-text28">Product</span>
+                          </fragment>
+                        </a>
+                        <a
+                          href="about.html"
+                          class="footer1-link72 thq-body-small"
+                        >
+                          <fragment class="home-fragment29">
+                            <span class="home-text29">About</span>
+                          </fragment>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="footer1-column3">
+                      <div class="footer1-social-links">
+                        <div class="footer1-link1">
+                          <a
+                            href="https://x.com/SzimplaSystems"
+                            target="_blank"
+                            rel="noreferrer noopener"
+                            class="footer1-link2"
+                          >
+                            <svg
+                              width="32"
+                              height="32"
+                              viewBox="0 0 32 32"
+                              class="footer1-icon1"
+                            >
+                              <path
+                                d="M18.234 14.162L26.977 4h-2.072l-7.591 8.824L11.25 4H4.258l9.169 13.343L4.258 28H6.33l8.016-9.318L20.75 28h6.993zm-2.837 3.299l-.93-1.329L7.078 5.56h3.182l5.964 8.532l.93 1.329l7.753 11.09h-3.182z"
+                                fill="currentColor"
+                              ></path>
+                            </svg>
+                          </a>
+                        </div>
+                        <div class="footer1-link3">
+                          <a
+                            href="mailto:info@szimpla.co?subject="
+                            class="footer1-link4"
+                          >
+                            <svg
+                              width="32"
+                              height="32"
+                              viewBox="0 0 24 24"
+                              class="footer1-icon3"
+                            >
+                              <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10h5v-2h-5c-4.34 0-8-3.66-8-8s3.66-8 8-8s8 3.66 8 8v1.43c0 .79-.71 1.57-1.5 1.57s-1.5-.78-1.5-1.57V12c0-2.76-2.24-5-5-5s-5 2.24-5 5s2.24 5 5 5c1.38 0 2.64-.56 3.54-1.47c.65.89 1.77 1.47 2.96 1.47c1.97 0 3.5-1.6 3.5-3.57V12c0-5.52-4.48-10-10-10m0 13c-1.66 0-3-1.34-3-3s1.34-3 3-3s3 1.34 3 3s-1.34 3-3 3"
+                                fill="currentColor"
+                              ></path>
+                            </svg>
+                          </a>
+                        </div>
+                        <div class="footer1-link5">
+                          <svg
+                            width="32"
+                            height="32"
+                            viewBox="0 0 24 24"
+                            class="footer1-icon5"
+                          >
+                            <path
+                              d="M5.004 7h-.029a2.235 2.235 0 1 1 .057-4.457A2.235 2.235 0 1 1 5.004 7m-1.986 3h4v12h-4zm14.5 0a4.47 4.47 0 0 0-3.5 1.703V10h-4v12h4v-5.5a2 2 0 0 1 4 0V22h4v-7.5a4.5 4.5 0 0 0-4.5-4.5"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer1-credits">
+                <div class="thq-divider-horizontal"></div>
+                <div class="footer1-row">
+                  <span class="footer1-content3 thq-body-small">
+                    <fragment class="home-fragment32">
+                      <span class="home-text32">© 2024 Szimpla</span>
+                    </fragment>
+                  </span>
+                  <div class="footer1-footer-links2"></div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </footer1-wrapper>
+      </div>
+    </div>
+    <script
+      defer=""
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
 </html>
