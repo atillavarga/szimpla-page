@@ -1,0 +1,226 @@
+.product-layout349 {
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  margin-top: var(--dl-space-space-sixunits);
+  align-items: center;
+  margin-bottom: var(--dl-space-space-sixunits);
+  flex-direction: column;
+}
+ 
+.product-max-width {
+  gap: var(--dl-space-space-fiveunits);
+  height: auto;
+  display: flex;
+  align-self: center;
+  padding-top: 0px;
+  flex-direction: row;
+}
+ 
+.product-content1 {
+  gap: var(--dl-space-space-oneandhalfunits);
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.product-section-title {
+  gap: var(--dl-space-space-oneandhalfunits);
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  animation-name: fadeInLeft;
+  flex-direction: column;
+  animation-delay: 0s;
+  animation-duration: 800ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+ 
+.product-content2 {
+  gap: var(--dl-space-space-oneandhalfunits);
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.product-text1 {
+  font-style: normal;
+  font-family: "Quicksand";
+  font-weight: 700;
+}
+ 
+.product-text2 {
+  font-style: normal;
+  font-family: "Quicksand";
+  font-weight: 500;
+}
+ 
+.product-form {
+  width: 415px;
+}
+ 
+.product-container {
+  gap: var(--dl-space-space-oneandhalfunits);
+  display: flex;
+  align-self: stretch;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.product-input1 {
+  width: 100%;
+  align-self: flex-start;
+  justify-content: space-between;
+}
+ 
+.product-text-input1 {
+  flex: 1;
+}
+ 
+.product-input2 {
+  width: 100%;
+  align-self: flex-start;
+  justify-content: space-between;
+}
+ 
+.product-text-input2 {
+  flex: 1;
+}
+ 
+.product-button {
+  align-self: flex-start;
+  border-color: #fa4949;
+  background-color: #fa4949;
+}
+ 
+.product-image-container {
+  flex: 1;
+  height: 600px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  animation-name: fadeInRight;
+  animation-delay: 0s;
+  background-size: cover;
+  background-image: url("public/img-20241120-wa0003%20copy21-600h.png");
+  background-repeat: no-repeat;
+  animation-duration: 800ms;
+  animation-direction: normal;
+  background-position: center;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+ 
+.product-fragment1 {
+  display: contents;
+}
+ 
+.product-text5 {
+  display: inline-block;
+}
+ 
+.product-fragment2 {
+  display: contents;
+}
+ 
+.product-text6 {
+  display: inline-block;
+}
+ 
+.product-fragment3 {
+  display: contents;
+}
+ 
+.product-text7 {
+  display: inline-block;
+}
+ 
+.productroot-class-name {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: var(--dl-space-space-sixunits);
+}
+ 
+@media(max-width: 991px) {
+  .product-layout349 {
+    height: auto;
+  }
+  .product-max-width {
+    gap: var(--dl-space-space-twounits);
+    position: relative;
+    flex-direction: column-reverse;
+  }
+  .product-content1 {
+    width: 502px;
+  }
+  .product-section-title {
+    width: 489px;
+  }
+  .product-content2 {
+    width: 460px;
+  }
+  .product-input1 {
+    align-items: center;
+    flex-direction: row;
+  }
+  .product-input2 {
+    align-items: center;
+    flex-direction: row;
+  }
+  .product-image-container {
+    top: 83px;
+    right: 0px;
+    width: 364px;
+    height: 452px;
+    display: block;
+    position: absolute;
+    align-self: flex-end;
+    padding-top: 2px;
+    padding-bottom: 6px;
+  }
+}
+ 
+@media(max-width: 767px) {
+  .product-layout349 {
+    height: auto;
+  }
+  .product-section-title {
+    width: 410px;
+  }
+  .product-content2 {
+    width: 341px;
+  }
+  .product-form {
+    width: 100%;
+  }
+  .product-image-container {
+    width: 316px;
+    height: 438px;
+  }
+}
+ 
+@media(max-width: 479px) {
+  .product-layout349 {
+    height: auto;
+  }
+  .product-content1 {
+    width: 437px;
+  }
+  .product-content2 {
+    width: 100%;
+  }
+  .product-text1 {
+    margin-bottom: 446px;
+  }
+  .product-image-container {
+    top: 65px;
+    right: 0px;
+    width: 428px;
+  }
+}
