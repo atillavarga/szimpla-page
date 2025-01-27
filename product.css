@@ -426,7 +426,8 @@
     height: auto;
   }
   .product-content1 {
-    width: 437px;
+    /* width: 437px; */
+    width: 100%;
   }
   .product-content2 {
     width: 100%;
@@ -436,7 +437,8 @@
   }
   .product-image-container {
     top: 65px;
-    right: 0px;
+    /* right: 0px; */
+    right: 23px;
     width: 428px;
   }
 }
@@ -975,7 +977,7 @@
     justify-content: center;
   }
   .footer1-container2 {
-    width: 435px;
+    width: 352px;
     height: auto;
   }
   .footer1-column2 {
