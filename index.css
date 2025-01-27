@@ -1320,7 +1320,7 @@
     align-self: stretch;
     align-items: center;
     aspect-ratio: auto;
-    margin-right: var(--dl-space-space-unit);
+    /* margin-right: var(--dl-space-space-unit); */
     flex-direction: row;
     justify-content: flex-start;
   }
@@ -1330,7 +1330,7 @@
   .footer1-link5 {
     height: auto;
     align-self: stretch;
-    margin-right: var(--dl-space-space-unit);
+    /* margin-right: var(--dl-space-space-unit); */
     padding-left: 0px 0;
     justify-content: flex-start;
   }
