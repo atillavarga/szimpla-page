@@ -426,19 +426,17 @@
     height: auto;
   }
   .product-content1 {
-    /* width: 437px; */
-    width: 100%;
+    width: 362px;
   }
   .product-content2 {
-    width: 100%;
+    width: 362px;
   }
   .product-text1 {
     margin-bottom: 446px;
   }
   .product-image-container {
     top: 65px;
-    /* right: 0px; */
-    right: 23px;
+    right: -50px;
     width: 428px;
   }
 }
