@@ -356,27 +356,21 @@
                     features and product releases.
                   </span>
                   <div class="footer1-actions">
-                    <div class="footer1-form">
-                      <div class="footer1-container1">
-                        <input
-                          type="text"
-                          placeholder="Enter your name"
-                          class="footer1-text-input1 thq-input"
-                        />
-                        <input
-                          type="email"
-                          placeholder="Enter your email"
-                          class="footer1-text-input2 thq-input"
-                        />
+                    <form id="submissionForm" method="post" action="#">
+                      <div class="footer1-form">
+                        <div class="footer1-container1">
+                          <input type="text" name="submission_name" id="submission_name" autocomplete="name" placeholder="Enter your name" class="footer1-text-input1 thq-input" required/>
+                          <input type="email" name="submission_email" id="submission_email" autocomplete="email" placeholder="Enter your email" class="footer1-text-input2 thq-input" required/>
+                        </div>
+                        <button type="submit" class="footer1-button thq-button-outline">
+                          <span class="footer1-action1 thq-body-small">
+                            <fragment class="product-fragment21">
+                              <span class="product-text36">Subscribe</span>
+                            </fragment>
+                          </span>
+                        </button>
                       </div>
-                      <button class="footer1-button thq-button-outline">
-                        <span class="footer1-action1 thq-body-small">
-                          <fragment class="about-fragment27">
-                            <span class="about-text29">Subscribe</span>
-                          </fragment>
-                        </span>
-                      </button>
-                    </div>
+                    </form>
                     <span class="footer1-content2 thq-body-small">
                       <fragment class="about-fragment28">
                         <span class="about-text30">
@@ -491,9 +485,66 @@
         </footer1-wrapper>
       </div>
     </div>
-    <script
-      defer=""
-      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
-    ></script>
+
+    <!-- Scripts -->
+    <script defer="" src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+
+    <script>
+      document.getElementById('reservationForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission behavior
+
+        const name = document.getElementById('reservation_name').value;
+        const email = document.getElementById('reservation_email').value;
+
+        const workerUrl = 'https://forms-handler.atilla1varga.workers.dev/';
+    
+        fetch(workerUrl, {
+          method: 'POST',
+          headers: {
+          'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ name, email })
+          
+        })
+        .then(response => response.text())
+        .then(data => {
+          console.log('Data submitted successfully:', data);
+          window.location.href='/reservation-confirmation.html';
+        })
+        .catch(error => {
+          console.error('Error submitting data:', error);
+          // Handle errors, e.g., display an error message
+        });
+      });
+
+      document.getElementById('submissionForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission behavior
+
+        const name = document.getElementById('submission_name').value;
+        const email = document.getElementById('submission_email').value;
+
+        const workerUrl = 'https://forms-handler.atilla1varga.workers.dev/';
+    
+        fetch(workerUrl, {
+          method: 'POST',
+          headers: {
+          'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ name, email })
+          
+        })
+        .then(response => response.text())
+        .then(data => {
+          console.log('Data submitted successfully:', data);
+          window.location.href='/form-submitted.html';
+          // alert("Form Submitted!");
+        })
+        .catch(error => {
+          console.error('Error submitting data:', error);
+          // Handle errors, e.g., display an error message
+        });
+      });
+    </script>
+    
   </body>
 </html>

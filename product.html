@@ -431,8 +431,8 @@
         .then(response => response.text())
         .then(data => {
           console.log('Data submitted successfully:', data);
-          // window.location.href='/form-submitted.html';
-          alert("Form Submitted!");
+          window.location.href='/form-submitted.html';
+          // alert("Form Submitted!");
         })
         .catch(error => {
           console.error('Error submitting data:', error);
