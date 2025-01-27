@@ -250,27 +250,21 @@
                     features and product releases.
                   </span>
                   <div class="footer1-actions">
-                    <div class="footer1-form">
-                      <div class="footer1-container1">
-                        <input
-                          type="text"
-                          placeholder="Enter your name"
-                          class="footer1-text-input1 thq-input"
-                        />
-                        <input
-                          type="email"
-                          placeholder="Enter your email"
-                          class="footer1-text-input2 thq-input"
-                        />
+                    <form id="submissionForm" method="post" action="#">
+                      <div class="footer1-form">
+                        <div class="footer1-container1">
+                          <input type="text" name="submission_name" id="submission_name" autocomplete="name" placeholder="Enter your name" class="footer1-text-input1 thq-input" required/>
+                          <input type="email" name="submission_email" id="submission_email" autocomplete="email" placeholder="Enter your email" class="footer1-text-input2 thq-input" required/>
+                        </div>
+                        <button type="submit" class="footer1-button thq-button-outline">
+                          <span class="footer1-action1 thq-body-small">
+                            <fragment class="product-fragment21">
+                              <span class="product-text36">Subscribe</span>
+                            </fragment>
+                          </span>
+                        </button>
                       </div>
-                      <button class="footer1-button thq-button-outline">
-                        <span class="footer1-action1 thq-body-small">
-                          <fragment class="product-fragment21">
-                            <span class="product-text36">Subscribe</span>
-                          </fragment>
-                        </span>
-                      </button>
-                    </div>
+                    </form>
                     <span class="footer1-content2 thq-body-small">
                       <fragment class="product-fragment22">
                         <span class="product-text37">
