@@ -490,33 +490,7 @@
     <script defer="" src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
 
     <script>
-      document.getElementById('reservationForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent default form submission behavior
-
-        const name = document.getElementById('reservation_name').value;
-        const email = document.getElementById('reservation_email').value;
-
-        const workerUrl = 'https://forms-handler.atilla1varga.workers.dev/';
-    
-        fetch(workerUrl, {
-          method: 'POST',
-          headers: {
-          'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({ name, email })
-          
-        })
-        .then(response => response.text())
-        .then(data => {
-          console.log('Data submitted successfully:', data);
-          window.location.href='/reservation-confirmation.html';
-        })
-        .catch(error => {
-          console.error('Error submitting data:', error);
-          // Handle errors, e.g., display an error message
-        });
-      });
-
+      
       document.getElementById('submissionForm').addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent default form submission behavior
 
