@@ -1279,11 +1279,10 @@
   }
   .footer1-footer-links1 {
     /* width: 230px; */
-    width: 200px;
+    width: 230px;
     height: 46px;
     align-items: center;
-    /* justify-content: space-between; */
-    justify-content: flex-start;
+    justify-content: space-between;
   }
   .footer1-link6 {
     align-self: center;
@@ -1302,7 +1301,7 @@
     /* width: 176px; */
     width: 150px;
     align-items: center;
-    flex-direction: row-reverse;
+    flex-direction: row;
     /* justify-content: space-between; */
     justify-content: flex-end;
   }
