@@ -1299,11 +1299,11 @@
   }
   .footer1-social-links {
     /* width: 176px; */
-    width: 150px;
+    width: 140px;
     align-items: center;
     flex-direction: row;
-    /* justify-content: space-between; */
-    justify-content: flex-end;
+    justify-content: space-between;
+    /* justify-content: flex-end; */
   }
   .footer1-link1 {
     height: auto;
