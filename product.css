@@ -219,9 +219,9 @@
   display: flex;
   overflow: hidden;
   position: relative;
-  margin-top: var(--dl-space-space-sixunits);
+  /* margin-top: var(--dl-space-space-sixunits); */
   align-items: center;
-  margin-bottom: var(--dl-space-space-sixunits);
+  /* margin-bottom: var(--dl-space-space-sixunits); */
   flex-direction: column;
 }
  
